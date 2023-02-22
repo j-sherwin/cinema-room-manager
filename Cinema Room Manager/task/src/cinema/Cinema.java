@@ -37,7 +37,7 @@ public class Cinema {
             System.out.println();
         }
 
-        // Accepts input for seat selection and calculates ticket price
+        // Accepts input for seat selection and calculates ticket price.
         System.out.println("Enter a row number:");
         int rowNum = scanner.nextInt();
         System.out.println("Enter a seat number in that row:");
