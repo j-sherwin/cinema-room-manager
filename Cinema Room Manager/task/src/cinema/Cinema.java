@@ -10,7 +10,7 @@ public class Cinema {
     static int income = 0;
     static float totalSeats = 0;
 
-    public static int income(int a, int b) {
+    public static void income(int a, int b) {
         if (a * b <= 60) {
             income = a * b * 10;
         } else  {
@@ -18,7 +18,6 @@ public class Cinema {
             int backRows = b - frontRows;
             income = frontRows * a * 10 + backRows * a * 8;
         }
-        return income;
     }
     public static void menu() {
         System.out.println("1. Show the seats");
@@ -102,7 +101,7 @@ public class Cinema {
         System.out.println("Enter the number of seats in each row:");
         int seats = scanner.nextInt();
         //calculate income
-        income = income(rows, seats);
+        income(rows, seats);
         totalSeats = rows * seats;
         // Builds 2D array and assigns values to coordinates
         String[][] array = buildArray(rows, seats);
